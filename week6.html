@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Shadows and gradients in CSS</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:white;
+    padding:40px;
+}
+
+.box{
+    width:200px;
+    height:120px;
+    margin:20px;
+    padding:20px;
+    display:inline-block;
+    background:white;
+    text-align:center;
+}
+
+.box1{
+    box-shadow: 2px 2px 5px gray;
+}
+
+.box2{
+    box-shadow: 5px 5px 15px black;
+}
+
+.box3{
+    box-shadow: 0px 5px 20px blue;
+}
+
+.text1{
+    text-shadow:2px 2px 3px green;
+}
+
+.text2{
+    text-shadow:3px 3px 5px yellow;
+}
+
+.text3{
+    text-shadow:0 0 10px blue;
+}
+
+.linear{
+    width:200px;
+    height:100px;
+    margin-top:30px;
+    background:linear-gradient(to right, red, orange, yellow);
+}
+
+
+.radial{
+    width:200px;
+    height:100px;
+    margin-top:30px;
+    background:radial-gradient(circle, lightblue, blue, navy);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Тени и Градиенты</h1>
+
+
+<h2>Задание 1: Тени для блоков (box-shadow)</h2>
+
+<div class="box1">Лёгкая тень</div>
+<div class="box2">Сильная тень</div>
+<div class="box3">Цветная тень</div>
+
+
+<h2>Задание 2: Тени для текста (text-shadow)</h2>
+
+<h1 class="text1">Текст зеленой тенью</h1>
+<h1 class="text2">Текст желтой тенью</h1>
+<h1 class="text3">Текст синей тенью</h1>
+
+<h2>Задание 3: Линейный градиент (linear-gradient)</h2>
+
+<div class="linear"></div>
+
+
+
+<h2>Задание 4: Радиальный градиент (radial-gradient)</h2>
+
+<div class="radial"></div>
+
+</body>
+</html>
