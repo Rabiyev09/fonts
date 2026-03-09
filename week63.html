@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pseudo-elements in CSS</title>
+
+<style>
+
+p::before{
+    color: red; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid wheat;
+    position: relative;
+}
+
+.card::before{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: blue;
+}
+
+.card::after{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: purple;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>1st Title</h1>
+<h2>2nd Title</h2>
+
+<p>This is the 1st paragraph.</p>
+<p>This is the 2nd paragraph.</p>
+<p>This is the 3rd paragraph.</p>
+
+
+<div class="card">
+This is a content block with decorative lines created using pseudo-elements.
+</div>
+
+<div class="card">
+This is a content block using ::before and ::after.
+</div>
+
+</body>
+</html>
