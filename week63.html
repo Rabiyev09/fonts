@@ -7,9 +7,14 @@
 <style>
 
 p::before{
-    color: red; 
+    color: yellow; 
     font-size: 18px; 
     font-weight: bold;
+}
+
+h1::after{
+    content: ">> ";
+    color: red;
 }
 
 .card{
@@ -21,15 +26,21 @@ p::before{
 }
 
 .card::before{
+    content: "";
     position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
     height: 4px;
     background: blue;
 }
 
 .card::after{
+    content: "";
     position: absolute;
     width: 100%;
+    bottom: 0;
+    left: 0;
     height: 4px;
     background: purple;
 }
